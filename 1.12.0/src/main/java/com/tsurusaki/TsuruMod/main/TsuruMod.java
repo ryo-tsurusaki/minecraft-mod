@@ -7,7 +7,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(TsuruMod.MOD_ID)
 public class TsuruMod {
-    public static final String MOD_ID = "tsurumod";
+    public static final String MOD_ID = "tsuru_mod";
 
     public TsuruMod(){
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
