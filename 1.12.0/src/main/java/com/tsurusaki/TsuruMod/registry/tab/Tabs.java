@@ -1,6 +1,7 @@
-package com.tsurusaki.TsuruMod.regi.tab;
+package com.tsurusaki.TsuruMod.registry.tab;
 
-import com.tsurusaki.TsuruMod.main.TsuruMod;
+import com.tsurusaki.TsuruMod.Application;
+import com.tsurusaki.TsuruMod.registry.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -13,12 +14,15 @@ import net.minecraftforge.registries.RegistryObject;
 public class Tabs {
 
     public static final DeferredRegister<CreativeModeTab> MOD_TABS = DeferredRegister
-            .create(Registries.CREATIVE_MODE_TAB, TsuruMod.MOD_ID);
+            .create(Registries.CREATIVE_MODE_TAB, Application.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> TOOL_TAB = MOD_TABS.register("tool",
+    /**
+     * 「道具と実用品」タブ
+     */
+    public static final RegistryObject<CreativeModeTab> TOOLS_TAB = MOD_TABS.register("tools",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(Blocks.CHERRY_PLANKS))
-                    .title(Component.translatable("itemGroup.tool"))
+                    .icon(() -> new ItemStack(Blocks.ACACIA_PLANKS))
+                    .title(Component.translatable("itemGroup.tools"))
                     .displayItems((param, output) -> {
                         for (Item item : ToolItems.items) {
                             output.accept(item);
@@ -26,13 +30,16 @@ public class Tabs {
                     })
                     .build());
 
-    public static final RegistryObject<CreativeModeTab> TOOL_SUB_TAB = MOD_TABS.register("tool_sub",
+    /**
+     * 「材料」タブ
+     */
+    public static final RegistryObject<CreativeModeTab> INGREDIENTS_TAB = MOD_TABS.register("ingredients",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(Blocks.ACACIA_PLANKS))
-                    .title(Component.translatable("itemGroup.tool_sub"))
-                    .withTabsBefore(Tabs.TOOL_TAB.getId())
+                    .icon(() -> new ItemStack(ModItems.TITANIUM_INGOT.get()))
+                    .title(Component.translatable("itemGroup.ingredients"))
+                    .withTabsBefore(Tabs.TOOLS_TAB.getId())
                     .displayItems((param, output) -> {
-                        for (Item item : ToolItems.items) {
+                        for (Item item : IngredientsItems.items) {
                             output.accept(item);
                         }
                     })

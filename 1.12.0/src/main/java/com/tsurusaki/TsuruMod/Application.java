@@ -1,16 +1,18 @@
-package com.tsurusaki.TsuruMod.main;
+package com.tsurusaki.TsuruMod;
 
-import com.tsurusaki.TsuruMod.regi.tab.Tabs;
+import com.tsurusaki.TsuruMod.registry.ModItems;
+import com.tsurusaki.TsuruMod.registry.tab.Tabs;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod(TsuruMod.MOD_ID)
-public class TsuruMod {
+@Mod(Application.MOD_ID)
+public class Application {
     public static final String MOD_ID = "tsuru_mod";
 
-    public TsuruMod(){
+    public Application(){
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModItems.ITEMS.register(bus);
         Tabs.MOD_TABS.register(bus);
     }
 }

@@ -1,4 +1,6 @@
 {
-  "itemGroup.tool": "MODツール",
-  "itemGroup.tool_sub": "MODツールサブ"
+  "itemGroup.tools": "道具と実用品 *",
+  "itemGroup.ingredients": "材料 *",
+
+  "item.tsuru_mod.titanium_ingot": "チタンインゴット"
 }
