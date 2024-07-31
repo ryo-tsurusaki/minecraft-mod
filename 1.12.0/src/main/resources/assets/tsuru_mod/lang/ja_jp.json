@@ -2,5 +2,6 @@
   "itemGroup.tools": "道具と実用品 *",
   "itemGroup.ingredients": "材料 *",
 
-  "item.tsuru_mod.titanium_ingot": "チタンインゴット"
+  "item.tsuru_mod.titanium_ingot": "チタンインゴット",
+  "item.tsuru_mod.orichalcum_ingot": "オリハルコンインゴット"
 }

@@ -13,4 +13,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> TITANIUM_INGOT =
             ITEMS.register("titanium_ingot", TitaniumIngot::new);
+    public static final RegistryObject<Item> ORICHALCUM_INGOT =
+            ITEMS.register("orichalcum_ingot", TitaniumIngot::new);
 }

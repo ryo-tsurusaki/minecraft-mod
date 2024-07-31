@@ -10,6 +10,8 @@ public class IngredientsItems {
      */
     public static final Item[] items = {
             // チタンインゴット
-            ModItems.TITANIUM_INGOT.get()
+            ModItems.TITANIUM_INGOT.get(),
+            // オリハルコンインゴット
+            ModItems.ORICHALCUM_INGOT.get()
     };
 }
