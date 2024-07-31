@@ -1,6 +1,7 @@
 package com.tsurusaki.TsuruMod.registry;
 
 import com.tsurusaki.TsuruMod.Application;
+import com.tsurusaki.TsuruMod.item.OrichalcumIngot;
 import com.tsurusaki.TsuruMod.item.TitaniumIngot;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,5 +15,5 @@ public class ModItems {
     public static final RegistryObject<Item> TITANIUM_INGOT =
             ITEMS.register("titanium_ingot", TitaniumIngot::new);
     public static final RegistryObject<Item> ORICHALCUM_INGOT =
-            ITEMS.register("orichalcum_ingot", TitaniumIngot::new);
+            ITEMS.register("orichalcum_ingot", OrichalcumIngot::new);
 }
