@@ -10,14 +10,14 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlocks {
 
-    private static final String ORICHALUM_BLOCK_ID = "orichalcum_block";
+    private static final String ORICHALCUM_BLOCK_ID = "orichalcum_block";
 
     public static class Blocks {
         public static final DeferredRegister<Block> BLOCKS = DeferredRegister
                 .create(ForgeRegistries.BLOCKS, Application.MOD_ID);
 
         public static final RegistryObject<Block> ORICHALUM_BLOCK =
-                BLOCKS.register(ORICHALUM_BLOCK_ID, com.tsurusaki.TsuruMod.block.OrichalcumBlock::new);
+                BLOCKS.register(ORICHALCUM_BLOCK_ID, com.tsurusaki.TsuruMod.block.OrichalcumBlock::new);
     }
 
     public static class BlockItems {
@@ -25,6 +25,6 @@ public class ModBlocks {
                 .create(ForgeRegistries.ITEMS, Application.MOD_ID);
 
         public static final RegistryObject<Item> ORICHALUM_BLOCK =
-                BLOCK_ITEMS.register(ORICHALUM_BLOCK_ID, OrichalcumBlock::new);
+                BLOCK_ITEMS.register(ORICHALCUM_BLOCK_ID, OrichalcumBlock::new);
     }
 }
