@@ -1,6 +1,9 @@
 {
-  "itemGroup.tools": "Tools & Ex.Utilities *",
+  "itemGroup.natural_blocks": "Natural Blocks *",
+  "itemGroup.tools": "Tools & Utilities *",
   "itemGroup.ingredients": "Ingredients *",
+
+  "block.tsuru_mod.orichalcum_block": "Orichalcum Block",
 
   "item.tsuru_mod.titanium_ingot": "Titanium Ingot",
   "item.tsuru_mod.orichalcum_ingot": "Orichalcum Ingot"

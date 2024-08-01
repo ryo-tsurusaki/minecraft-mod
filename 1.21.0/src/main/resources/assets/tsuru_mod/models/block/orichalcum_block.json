@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tsuru_mod:block/orichalcum_block"
+  }
+}

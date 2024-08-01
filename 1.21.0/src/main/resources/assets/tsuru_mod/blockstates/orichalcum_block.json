@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tsuru_mod:block/orichalcum_block"
+    }
+  }
+}

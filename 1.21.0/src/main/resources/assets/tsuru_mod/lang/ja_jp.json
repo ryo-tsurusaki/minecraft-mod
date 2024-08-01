@@ -1,6 +1,9 @@
 {
+  "itemGroup.natural_blocks": "天然ブロック *",
   "itemGroup.tools": "道具と実用品 *",
   "itemGroup.ingredients": "材料 *",
+
+  "block.tsuru_mod.orichalcum_block": "オリハルコンブロック",
 
   "item.tsuru_mod.titanium_ingot": "チタンインゴット",
   "item.tsuru_mod.orichalcum_ingot": "オリハルコンインゴット"

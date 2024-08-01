@@ -19,6 +19,16 @@ public class OrichalcumIngot extends Item {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrichalcumIngot.class);
 
+    /**
+     * オリハルコンインゴット
+     */
+    public OrichalcumIngot() {
+        super(new Properties()
+                .fireResistant()
+                .stacksTo(StacksTo.INGOT.toInt())
+        );
+    }
+
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(
             @NotNull Level world,
@@ -35,15 +45,5 @@ public class OrichalcumIngot extends Item {
         }
 
         return InteractionResultHolder.consume(itemStack);
-    }
-
-    /**
-     * オリハルコンインゴット
-     */
-    public OrichalcumIngot() {
-        super(new Properties()
-                .fireResistant()
-                .stacksTo(StacksTo.INGOT.toInt())
-        );
     }
 }

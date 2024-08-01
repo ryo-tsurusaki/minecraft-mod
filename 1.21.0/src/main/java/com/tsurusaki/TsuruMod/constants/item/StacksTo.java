@@ -6,7 +6,9 @@ package com.tsurusaki.TsuruMod.constants.item;
 public enum StacksTo {
 
     // インゴット
-    INGOT(64);
+    INGOT(64),
+    // ブロック
+    BLOCK(64);
 
     private final int stacksTo;
 
