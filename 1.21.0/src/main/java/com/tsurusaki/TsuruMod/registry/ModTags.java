@@ -9,7 +9,7 @@ import net.minecraft.world.item.Item;
 
 public class ModTags {
 
-    public static class Items{
+    public static class Items {
 
         public static final TagKey<Item> IS_SHINE = tag("is_shine");
 

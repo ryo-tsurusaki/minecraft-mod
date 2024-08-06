@@ -11,7 +11,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class Application {
     public static final String MOD_ID = "tsuru_mod";
 
-    public Application(){
+    public Application() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.ITEMS.register(bus);
         ModBlocks.Blocks.BLOCKS.register(bus);
